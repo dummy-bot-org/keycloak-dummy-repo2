@@ -32,7 +32,7 @@ function should-tests-run-crossdc() {
     git diff --name-only HEAD origin/${TRAVIS_BRANCH} |
         egrep -i 'crossdc|infinispan'
 }
-
+# Meh
 if ! should-tests-run; then
     echo "Skipping all tests (including group '$1')"
     exit 0
